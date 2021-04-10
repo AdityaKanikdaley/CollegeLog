@@ -12,7 +12,8 @@
         <activity android:name=".about_page"></activity>
         <activity android:name=".Calculator" />
         <activity android:name=".timeSlots" />
-        <activity android:name=".timeTable_Main" />
+        <activity android:name=".timeTable_Main"
+            android:theme="@style/Theme.AppCompat.Light"/>
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light">
