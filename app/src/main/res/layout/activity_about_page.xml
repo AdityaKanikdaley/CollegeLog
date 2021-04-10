@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".about_page">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+       >
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" About:"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/roles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="
+This app is mainly developed by-\n\n
+ -> Aditya Kanikdaley: \n
+       Home Page GUI + Integrating &amp; \n        Compiling\n\n
+ -> Chinmay Jain: \n
+       DataBase Management(SQLite) + \n        TimeTable + GPA \n\n
+ -> Mudit Sorikh: \n
+       Result Page GUI\n\n
+ -> Ankit Kumar: \n
+       Presentation Work &amp; Report Writing \n        for Completion Project\n
+"
+            android:textColor="#E4D395"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/usage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Usage:"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/using"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text=
+"This app holds the records of students's marks, grades, etc.\n
+We respect the privacy of our users, so, we are using an offline database.\n
+At the top will see the details of students,\n
+Click the TimeTable button for detailed page and Result button for it's detailed page.\n
+Open the Calculator icon for GPA calculations.\n
+"
+            android:textColor="#E8D074"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
