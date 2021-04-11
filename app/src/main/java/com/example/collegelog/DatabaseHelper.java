@@ -34,6 +34,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     private static final String COL_9 = "third_slot_day";
     private static final String COL_10 = "third_slot_time";
 
+
     public DatabaseHelper(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
