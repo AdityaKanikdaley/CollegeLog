@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".about_page"></activity>
+        <activity android:name=".Result_page"></activity>
+        <activity android:name=".about_page" />
         <activity android:name=".Calculator" />
         <activity android:name=".timeSlots" />
-        <activity android:name=".timeTable_Main"
-            android:theme="@style/Theme.AppCompat.Light"/>
+        <activity
+            android:name=".timeTable_Main"
+            android:theme="@style/Theme.AppCompat.Light" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light">

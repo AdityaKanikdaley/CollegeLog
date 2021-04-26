@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView calc, about;
     EditText e1,e2,e3;
     Button save;
+    Button result;
     SavedButtonDB mydb;
     String getname="",getreg="",getbranch="";
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mydb=new SavedButtonDB(this);
         button = (Button)findViewById(R.id.timetableButton);
         save=(Button)findViewById(R.id.save);
+        result=(Button)findViewById(R.id.resultButton);
         calc = (ImageView)findViewById(R.id.calc_icon);
         about = (ImageView)findViewById(R.id.about_Icon);
         e1=(EditText)findViewById(R.id.name);
@@ -69,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toresult = new Intent(MainActivity.this, Result_page.class);
+                startActivity(toresult);
+            }
+        });
+
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     boolean isInserted=mydb.insertData(name,reg,branch);
                     if(isInserted = true) {
-                        Toast.makeText(getApplicationContext(),"Data Inserted Successfully", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"Saved", Toast.LENGTH_LONG).show();
                     }
 
                 }
