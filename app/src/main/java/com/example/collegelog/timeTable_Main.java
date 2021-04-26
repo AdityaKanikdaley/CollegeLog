@@ -2,6 +2,7 @@ package com.example.collegelog;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -18,6 +19,9 @@ import java.util.List;
 
 
 public class timeTable_Main extends AppCompatActivity {
+
+    TextView timeTable;
+    Typeface face;
 
     Window window;
     Spinner spinner1,spinner2,spinner3;
@@ -48,6 +52,10 @@ public class timeTable_Main extends AppCompatActivity {
         spinner3=(Spinner)findViewById(R.id.spinner_3);
         button1=(Button)findViewById(R.id.button_one);
         button2=(Button)findViewById(R.id.button_two);
+
+        timeTable = findViewById(R.id.timeHead);
+        face = Typeface.createFromAsset(this.getAssets(), "fonts/KaushanScript-Regular.otf");
+        timeTable.setTypeface(face);
 
         List<String> list1=new ArrayList<String>();
         list1.add(0,"SLOTS");

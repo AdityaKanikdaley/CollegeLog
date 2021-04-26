@@ -44,7 +44,7 @@ This app is mainly developed by-\n\n
  -> Ankit Kumar: \n
        Presentation Work &amp; Report Writing \n        for Completion Project\n
 "
-            android:textColor="#E4D395"
+            android:textColor="#E4CD7A"
             android:textSize="20dp" />
 
         <TextView

@@ -3,6 +3,7 @@ package com.example.collegelog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Window;
@@ -10,6 +11,9 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class timeSlots extends AppCompatActivity {
+
+    TextView tv;
+    Typeface face;
 
     Window window;
     DatabaseHelper mydDb;
@@ -28,6 +32,11 @@ public class timeSlots extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
         }
+
+        tv = findViewById(R.id.timetable);
+        face = Typeface.createFromAsset(this.getAssets(), "fonts/SEASRN__.ttf");
+        tv.setTypeface(face);
+
         A11=(TextView) findViewById(R.id.A11);
         B11=(TextView) findViewById(R.id.B11);
         C11=(TextView) findViewById(R.id.C11);

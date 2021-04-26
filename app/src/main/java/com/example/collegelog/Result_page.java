@@ -2,25 +2,41 @@ package com.example.collegelog;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
 
 public class Result_page extends AppCompatActivity {
+
+    TextView tv;
+    Typeface face;
+
     Button Save_btn, load_btn, calc_btn;
     EditText e1,e2;
     ListView lv;
     DBHelper_Result db;
+    Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        window=this.getWindow();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_page);
+        if(Build.VERSION.SDK_INT>=21) {
+            window.setStatusBarColor(this.getResources().getColor(R.color.timetable));
+        }
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
 
         Save_btn=findViewById(R.id.button);
         load_btn=findViewById(R.id.button2);
@@ -28,6 +44,11 @@ public class Result_page extends AppCompatActivity {
         e1=findViewById(R.id.editText);
         e2=findViewById(R.id.editText2);
         lv=findViewById(R.id.list);
+
+        tv = findViewById(R.id.result_1);
+        face = Typeface.createFromAsset(this.getAssets(), "fonts/SEASRN__.ttf");
+        tv.setTypeface(face);
+
         db=new DBHelper_Result(this);
 
         Save_btn.setOnClickListener(new View.OnClickListener() {
@@ -66,7 +87,7 @@ public class Result_page extends AppCompatActivity {
                 List<String> everyone= db.getSubject();
 
 
-                ArrayAdapter resultArray=new ArrayAdapter<String>(Result_page.this, android.R.layout.simple_list_item_1, everyone);
+                ArrayAdapter resultArray=new ArrayAdapter<String>(Result_page.this, R.layout.list_layout, R.id.text1 ,everyone);
                 lv.setAdapter(resultArray);
 
             }

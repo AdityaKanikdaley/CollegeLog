@@ -24,22 +24,28 @@
             <TextView
                 android:layout_width="30dp"
                 android:layout_height="100dp" />
-            <ImageView
-                android:layout_width="180dp"
-                android:layout_height="100dp"
-                android:src="@drawable/heading"
-                android:layout_gravity="center"/>
+
             <TextView
-                android:layout_width="25dp"
+                android:id="@+id/timeHead"
+                android:layout_width="wrap_content"
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:text="TimeTable\n\t\t\t\tInputs"
+                android:textColor="#FFEB3B"
+
+                android:textSize="40dp" />
+            <TextView
+                android:layout_width="40dp"
                 android:layout_height="100dp" />
+
             <ImageView
                 android:layout_width="90dp"
                 android:layout_height="100dp"
-                android:src="@drawable/clock"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="30dp"
-                android:layout_height="40dp" />
+                android:layout_gravity="center"
+                android:src="@drawable/clock" />
+            <!--            <TextView-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="40dp" />-->
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"

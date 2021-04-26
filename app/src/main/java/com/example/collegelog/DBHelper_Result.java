@@ -62,7 +62,7 @@ public class DBHelper_Result extends SQLiteOpenHelper {
             String subjectname=cursor.getString(0);
             String grade=cursor.getString(1);
             String z;
-            z=subjectname+" - "+grade;
+            z = "\n" + subjectname + "   -   " + grade + "\n";
             returnList.add(z);
         }
 

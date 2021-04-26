@@ -15,7 +15,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="CollegeLog"
-        android:textColor="@color/white"
+        android:textColor="#050505"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView7"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginBottom="80dp"
-        android:background="#E31313"
+        android:background="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,8 +52,8 @@
             android:layout_height="50dp"
             android:inputType="textPersonName"
             android:hint="Name"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/startcolor" />
 
         <EditText
             android:id="@+id/registration"
@@ -61,8 +61,8 @@
             android:layout_height="50dp"
             android:inputType="text"
             android:hint="Reg.No."
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/startcolor" />
 
         <EditText
             android:id="@+id/branch"
@@ -70,8 +70,8 @@
             android:layout_height="50dp"
             android:inputType="textPersonName"
             android:hint="Branch"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:textColor="@color/white"
+            android:textColorHint="@color/startcolor"/>
 
     </LinearLayout>
 
@@ -95,7 +95,7 @@
         android:layout_height="3dp"
         android:layout_marginTop="73dp"
         android:layout_marginBottom="16dp"
-        android:background="#E31313"
+        android:background="@color/teal_200"
         app:layout_constraintBottom_toTopOf="@+id/timetableButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -125,7 +125,8 @@
         android:gravity="center"
         android:shadowRadius="@android:integer/config_longAnimTime"
         android:text="Time Table"
-        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColor="#F7FF00"
         app:layout_constraintBottom_toTopOf="@+id/resultButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -143,7 +144,8 @@
         android:shadowDy="@android:integer/config_longAnimTime"
         android:shadowRadius="@android:integer/config_longAnimTime"
         android:text="Result"
-        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColor="#F7FF00"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -163,7 +165,7 @@
         app:layout_constraintEnd_toStartOf="@+id/calc_icon"
         app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/result_1"
         app:layout_constraintVertical_bias="0.93"
         app:srcCompat="@drawable/ic_baseline_info_24"
         tools:ignore="VectorDrawableCompat" />
@@ -177,17 +179,17 @@
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/result_1"
         app:layout_constraintVertical_bias="0.891"
         app:srcCompat="@drawable/ic_baseline_calculate_24"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/result_1"
         android:layout_width="match_parent"
         android:layout_height="3dp"
         android:layout_marginTop="32dp"
-        android:background="#E31313"
+        android:background="@color/teal_200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -201,8 +203,10 @@
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/gradient_button"
+        android:elevation="9dp"
         android:text="Save"
-        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textColor="#F7FF00"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.052"

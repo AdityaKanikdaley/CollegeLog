@@ -2,6 +2,7 @@ package com.example.collegelog;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
@@ -11,11 +12,14 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    TextView CollegeLog;
+    Typeface face;
     Window window;
     Button button;
     ImageView calc, about;
@@ -46,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         e2=(EditText)findViewById(R.id.registration);
         e3=(EditText)findViewById(R.id.branch);
 
+        CollegeLog = findViewById(R.id.about);
+        face = Typeface.createFromAsset(this.getAssets(), "fonts/KaushanScript-Regular.otf");
+        CollegeLog.setTypeface(face);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
