@@ -8,5 +8,5 @@
 
 ## Demo Video
 
-<video src="https://user-images.githubusercontent.com/66813313/123538816-2e5cf200-d754-11eb-86d5-74a34d83c925.mp4" type="video/mp4" width="200" height="400">  
+<video src="" type="video/mp4" width="200" height="400">  
 
