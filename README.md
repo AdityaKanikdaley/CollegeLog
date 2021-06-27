@@ -8,7 +8,6 @@
 
 ## Demo Video
 
-<video src="https://user-images.githubusercontent.com/66813313/123538817-31f07900-d754-11eb-85d9-56eb185cb941.mp4" type="video/mp4" width="200" height="400">  
+<video src="https://user-images.githubusercontent.com/66813313/123538817-31f07900-d754-11eb-85d9-56eb185cb941.mp4" src="https://user-images.githubusercontent.com/66813313/123538817-31f07900-d754-11eb-85d9-56eb185cb941.mp4" type="video/mp4" width="200" height="400">  
   
-  
-<video src="https://user-images.githubusercontent.com/66813313/123538817-31f07900-d754-11eb-85d9-56eb185cb941.mp4" type="video/mp4" width="200" height="400">  
+ 
