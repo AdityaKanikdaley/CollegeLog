@@ -8,4 +8,4 @@
 
 ## Demo GPA Calculator
 
-<video src="https://github.com/AdityaKanikdaley/CollegeLog/blob/master/CL_5.gif" type="video/mp4" width="200" height="400">
+<video src="https://github.com/AdityaKanikdaley/CollegeLog/blob/master/CL_5.gif" width="200" height="400">
